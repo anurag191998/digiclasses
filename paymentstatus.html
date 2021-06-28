@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="css/bootstrap.min.css">
+ <link rel="stylesheet" href="css/all.min.css">
+ <!--Google font-->
+ <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+ <!--owl carousel-->
+ <link rel="stylesheet" href="css/owl.carousel.min.css">
+ <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+ <link rel="stylesheet" href="css/style.css">
+ <title>DiGi ClaSS</title>
+</head>
+
+<body>
+ <!--nav start-->
+ <nav class="navbar navbar-expand-md navbar-dark bg-dark px-2 fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">📚 DiGi Classes</a>
+    <span class="navbar-text">Learn and improve your skills.</span>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav custom-nav px-5">  
+        <a class="nav-link custom-nav-item" href="index.php">Home</a>
+        <a class="nav-link custom-nav-item" href="courses.php">Courses</a>
+        <a class="nav-link custom-nav-item" href="paymentstatus.php">Payment Status</a>
+        <a class="nav-link custom-nav-item" href="#">My Profile</a>
+        <a class="nav-link custom-nav-item" href="#" data-bs-toggle="modal" data-bs-target="#stuLoginModalCenter
+      ">Login</a>
+        <a class="nav-link custom-nav-item" href="#" data-bs-toggle="modal" data-bs-target="#stuRegModalCenter
+      ">Signup</a>
+        <a class="nav-link custom-nav-item" href="#">Feedback</a>
+        <a class="nav-link custom-nav-item" href="#">Contact</a>
+      </div>
+    </div>
+  </div>
+ </nav>
+ <!--nav end-->
+
+
+<div class="container-fluid bg-dark">
+ <div class="row">
+ <img src="./image/lb.jpg" alt="" alt="courses" style="height:680px; width:100%; "/>
+ </div>
+</div>
+
+<div class="container">
+ <h2 class="text-center my-4">💳 Payment Status</h2>
+
+ <form method="post" action="">
+  <div class="form-group row">
+   <label class=" col-form-label">Order Id:</label>
+   <div>
+    <input type="text" class="form-control">
+   </div>
+   <div><br>
+    <input type="submit" class="btn btn-primary" value="View">
+   </div>
+  </div>
+ </form>
+</div>
+
+<!--Contact us start-->
+<div class="container mt-4" id="Contact">
+    <h2 class="text-center mb-4">☎️ Contact Us</h2>
+    <div class="row">
+     <div class="col-md-8">
+      <form action="" method="post">
+       <input type="text" class="form-control" name="name" placeholder="Name"><br>
+       <input type="text" class="form-control" name="subject" placeholder="Subject"><br>
+       <input type="email" class="form-control" name="email" placeholder="Email"><br>
+       <textarea name="message" class="form-control" placeholder="How we can help you" style="height:150px;"></textarea><br>
+       <input type="submit" class="btn-btn-primary" name="name" value="Send"><br><br>
+      </form>
+     </div> <!--End contact us 1st column-->
+     <div class="col-md-4 stripe text-white text-center">
+      <!--Start Contact Us 2nd column-->
+      <h4>DiGi Classes</h4>
+      <p>rudrapur Uttarakhand ,(U.S.N) ,
+      Near Ashok Leyland
+      Phone: +918546585485
+      www.digiclasses.com
+      </p>
+     </div><!--End 2nd Column-->
+    </div><!--end Contact Row-->
+   </div> <!--End Contact Us Container-->
+   <!--End Contact us-->
+
+
+
+
+<!--Footer-->
+
+<footer class="container-fluid bg-dark text-center p-4">
+  <small class="text-white">📚 Copyright &copy; 2021 || Designed By Anurag Krishna Trivedi ||<a href="#login"  data-bs-toggle="modal" data-bs-target="#adminLoginModalCenter
+      "> Admin Login 📚</a></small>
+</footer>
+
+<!--Footer End-->
+
+
+
+<!-- Modal -->
+
+<!--Start of student registration-->
+<div class="modal fade" id="stuRegModalCenter" tabindex="-1" aria-labelledby="stuRegModalCenterLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="stuRegModalCenter
+      Label">Student Registration</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+      <form>
+        <div class="mb-3">
+          <i class="fas fa-user"></i> <label for="stuname" class="pl-2 font-weight-bold">Name</label>
+          <input type="text" class="form-control" placeholder="Name" name="stuname" id="stuname">
+        </div>
+        <div class="mb-3">
+          <i class="fas fa-envelope"></i> <label for="stuemail" class="pl-2 font-weight-bold">Email</label>
+          <input type="email" class="form-control" placeholder="Email" name="stuemail" id="stuemail">
+          <small class="form-text">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="mb-3">
+          <i class="fas fa-key"></i> <label for="stupass" class="pl-2 font-weight-bold">New Password</label>
+          <input type="password" class="form-control" placeholder="Password" name="stupass" id="stupass">
+        </div>
+      </form>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" onclick="addstu()">Sign Up</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--End of student registration-->
+
+
+
+<!--Start of student Login-->
+<div class="modal fade" id="stuLoginModalCenter" tabindex="-1" aria-labelledby="stuLoginModalCenterLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="stuLoginModalCenterLabel">Student Login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <!--login form start-->
+      <form class="stuLoginForm">
+        <div class="mb-3">
+          <i class="fas fa-envelope"></i> <label for="stuLogemail" class="pl-2 font-weight-bold">Email</label>
+          <input type="email" class="form-control" placeholder="Email" name="stuLogemail" id="stuLogemail">
+          <small class="form-text">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="mb-3">
+          <i class="fas fa-key"></i> <label for="stuLogpass" class="pl-2 font-weight-bold">Password</label>
+          <input type="password" class="form-control" placeholder="Password" name="stuLogpass" id="stuLogpass">
+        </div>
+      </form>
+      <!--Login form end-->
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" id="stuLoginBtn">Login</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--End of student Login-->
+
+
+<!--Start of Admin Login-->
+<div class="modal fade" id="adminLoginModalCenter" tabindex="-1" aria-labelledby="adminLoginModalCenterLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="adminLoginModalCenterLabel">Admin  Login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <!--login form start-->
+      <form class="adminLoginForm">
+        <div class="mb-3">
+          <i class="fas fa-envelope"></i> <label for="adminLogemail" class="pl-2 font-weight-bold">Email</label>
+          <input type="email" class="form-control" placeholder="Email" name="adminLogemail" id="adminLogemail">
+          <small class="form-text">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="mb-3">
+          <i class="fas fa-key"></i> <label for="adminLogpass" class="pl-2 font-weight-bold">Password</label>
+          <input type="password" class="form-control" placeholder="Password" name="adminLogpass" id="adminLogpass">
+        </div>
+      </form>
+      <!--Login form end-->
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" id="adminLoginBtn">Login</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--End of Admin Login-->
+
+<script src="js/jquery.min.js"></script>
+<script src="js/js.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/poppar.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/all.min.js"></script>
+<script src="js/ajaxrequest.js"></script>
+
+</body>
+</html>
+<!--footer end-->
